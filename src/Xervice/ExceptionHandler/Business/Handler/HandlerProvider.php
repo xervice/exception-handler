@@ -31,7 +31,7 @@ class HandlerProvider implements HandlerProviderInterface
     /**
      * @param \Exception $exception
      */
-    public function handleException(\Exception $exception): void
+    public function handleException(\Throwable $exception): void
     {
         foreach ($this->collection as $handler) {
             $handler->handleException($exception, $this->isDebug);

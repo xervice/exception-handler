@@ -17,7 +17,7 @@ class ExceptionHandlerFacade extends AbstractFacade
      * @param \Exception $exception
      *
      */
-    public function handleException(\Exception $exception): void
+    public function handleException(\Throwable $exception): void
     {
         $this->getFactory()->createExceptionHandler()->handleException($exception);
     }

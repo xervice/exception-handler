@@ -8,5 +8,5 @@ interface HandlerProviderInterface
     /**
      * @param \Exception $exception
      */
-    public function handleException(\Exception $exception): void;
+    public function handleException(\Throwable $exception): void;
 }

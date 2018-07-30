@@ -11,5 +11,5 @@ interface ExceptionHandlerInterface
      * @param \Exception $exception
      * @param bool $isDebug
      */
-    public function handleException(\Exception $exception, bool $isDebug): void;
+    public function handleException(\Throwable $exception, bool $isDebug): void;
 }
