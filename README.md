@@ -1,7 +1,9 @@
 ExceptionHandler
 =====================
 
-[![Build Status](https://travis-ci.org/xervice/exceptionhandler).svg?branch=master)](https://travis-ci.org/xervice/exceptionhandler)
+[![Build Status](https://travis-ci.org/xervice/exception-handler.svg?branch=master)](https://travis-ci.org/xervice/exception-handler)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/xervice/exception-handler/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/xervice/exception-handler/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/xervice/exception-handler/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/xervice/exception-handler/?branch=master)
 
 
 Installation
