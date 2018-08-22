@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Xervice\ExceptionHandler\Business\Handler;
+namespace Xervice\ExceptionHandler\Business\Model\Handler;
 
 
 class HandlerProvider implements HandlerProviderInterface
@@ -19,7 +19,7 @@ class HandlerProvider implements HandlerProviderInterface
     /**
      * HandlerProvider constructor.
      *
-     * @param \Xervice\ExceptionHandler\Business\Handler\HandlerCollection $collection
+     * @param \Xervice\ExceptionHandler\Business\Model\Handler\HandlerCollection $collection
      * @param bool $isDebug
      */
     public function __construct(HandlerCollection $collection, bool $isDebug)

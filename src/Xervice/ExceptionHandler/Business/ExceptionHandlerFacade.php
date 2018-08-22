@@ -2,20 +2,18 @@
 declare(strict_types=1);
 
 
-namespace Xervice\ExceptionHandler;
+namespace Xervice\ExceptionHandler\Business;
 
-
-use Xervice\Core\Facade\AbstractFacade;
+use Xervice\Core\Business\Model\Facade\AbstractFacade;
 
 /**
- * @method \Xervice\ExceptionHandler\ExceptionHandlerFactory getFactory()
+ * @method \Xervice\ExceptionHandler\Business\ExceptionHandlerBusinessFactory getFactory()
  * @method \Xervice\ExceptionHandler\ExceptionHandlerConfig getConfig()
  */
 class ExceptionHandlerFacade extends AbstractFacade
 {
     /**
      * @param \Exception $exception
-     *
      */
     public function handleException(\Throwable $exception): void
     {

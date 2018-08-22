@@ -1,13 +1,13 @@
 <?php
-declare(strict_types=1);
-
-namespace Xervice\ExceptionHandler\Business\Handler;
 
 
-class HandlerCollection implements \Iterator, \Countable
+namespace Xervice\ExceptionHandler\Business\Model\Register;
+
+
+class RegisterCollection implements \Iterator, \Countable
 {
     /**
-     * @var \Xervice\ExceptionHandler\Business\Handler\ExceptionHandlerInterface[]
+     * @var \Xervice\ExceptionHandler\Business\Model\Register\RegisterInterface[]
      */
     private $collection;
 
@@ -19,7 +19,7 @@ class HandlerCollection implements \Iterator, \Countable
     /**
      * Collection constructor.
      *
-     * @param \Xervice\ExceptionHandler\Business\Handler\ExceptionHandlerInterface[] $collection
+     * @param \Xervice\ExceptionHandler\Business\Model\Register\RegisterInterface[] $collection
      */
     public function __construct(array $collection)
     {
@@ -29,17 +29,17 @@ class HandlerCollection implements \Iterator, \Countable
     }
 
     /**
-     * @param \Xervice\ExceptionHandler\Business\Handler\ExceptionHandlerInterface $validator
+     * @param \Xervice\ExceptionHandler\Business\Model\Register\RegisterInterface $validator
      */
-    public function add(ExceptionHandlerInterface $validator): void
+    public function add(RegisterInterface $validator): void
     {
         $this->collection[] = $validator;
     }
 
     /**
-     * @return \Xervice\ExceptionHandler\Business\Handler\ExceptionHandlerInterface
+     * @return \Xervice\ExceptionHandler\Business\Model\Register\RegisterInterface
      */
-    public function current(): ExceptionHandlerInterface
+    public function current(): RegisterInterface
     {
         return $this->collection[$this->position];
     }

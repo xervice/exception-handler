@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Xervice\ExceptionHandler\Business\Register;
+namespace Xervice\ExceptionHandler\Business\Model\Register;
 
 
 interface RegisterInterface

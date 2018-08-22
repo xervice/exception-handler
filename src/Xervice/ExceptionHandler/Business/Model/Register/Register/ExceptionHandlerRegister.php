@@ -1,21 +1,19 @@
 <?php
 
 
-namespace Xervice\ExceptionHandler\Business\Register\Register;
+namespace Xervice\ExceptionHandler\Business\Model\Register\Register;
 
 
-use Xervice\Core\Locator\AbstractWithLocator;
-use Xervice\ExceptionHandler\Business\Register\RegisterInterface;
+use Xervice\Core\Plugin\AbstractBusinessPlugin;
+use Xervice\ExceptionHandler\Business\Model\Register\RegisterInterface;
 
 /**
  * @method \Xervice\ExceptionHandler\ExceptionHandlerFacade getFacade()
  */
-class ExceptionHandlerRegister extends AbstractWithLocator implements RegisterInterface
+class ExceptionHandlerRegister extends AbstractBusinessPlugin implements RegisterInterface
 {
     /**
      * @param bool $isDebug
-     *
-     * @throws \Core\Locator\Dynamic\ServiceNotParseable
      */
     public function register(bool $isDebug): void
     {

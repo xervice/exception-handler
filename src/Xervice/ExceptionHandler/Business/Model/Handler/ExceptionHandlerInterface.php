@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 
-namespace Xervice\ExceptionHandler\Business\Handler;
+namespace Xervice\ExceptionHandler\Business\Model\Handler;
 
 
 interface ExceptionHandlerInterface
