@@ -28,7 +28,7 @@ use Xervice\ExceptionHandler\ExceptionHandlerDependencyProvider as XerviceExcept
 class ExceptionHandlerDependencyProvider extends XerviceExceptionHandlerDependencyProvider
 {
     /**
-     * @return \Xervice\ExceptionHandler\Business\Register\RegisterInterface[]
+     * @return \Xervice\ExceptionHandler\Business\Model\Register\RegisterInterface[]
      */
     public function getExceptionRegister(): array
     {
@@ -52,7 +52,7 @@ use Xervice\ExceptionHandler\ExceptionHandlerDependencyProvider as XerviceExcept
 class ExceptionHandlerDependencyProvider extends XerviceExceptionHandlerDependencyProvider
 {
     /**
-     * @return \Xervice\ExceptionHandler\Business\Handler\ExceptionHandlerInterface[]
+     * @return \Xervice\ExceptionHandler\Business\Model\Handler\ExceptionHandlerInterface[]
      */
     public function getExceptionHandler(): array
     {
