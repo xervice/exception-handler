@@ -1,16 +1,17 @@
 <?php
 
 
-namespace Xervice\ExceptionHandler\Business\Model\Kernel;
+namespace Xervice\ExceptionHandler\Communication\Plugin;
 
 
+use Xervice\Core\Plugin\AbstractCommunicationPlugin;
 use Xervice\Kernel\Business\Model\Service\ServiceProviderInterface;
 use Xervice\Kernel\Business\Plugin\BootInterface;
 
 /**
  * @method \Xervice\ExceptionHandler\Business\ExceptionHandlerFacade getFacade()
  */
-class ExceptionService implements BootInterface
+class ExceptionService extends AbstractCommunicationPlugin implements BootInterface
 {
     /**
      * @param \Xervice\Kernel\Business\Model\Service\ServiceProviderInterface $serviceProvider

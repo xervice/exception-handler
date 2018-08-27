@@ -33,7 +33,7 @@ class ExceptionHandlerDependencyProvider extends XerviceExceptionHandlerDependen
     public function getExceptionRegister(): array
     {
         return [
-            new MyExceptionRegsiter() // implements RegisterInterface
+            new MyExceptionRegister() // implements RegisterInterface
         ];
     }
 }
